@@ -18,4 +18,4 @@ Options:
 _____________________________________________________________________________________________________________________________
 Special Thank to:
 - kvasszn: [mhtame](https://github.com/kvasszn/mhtame).
-- mi5hmash: [mi5hmash](https://github.com/mi5hmash/MandarinJuice).
+- mi5hmash: [MandarinJuice](https://github.com/mi5hmash/MandarinJuice).
