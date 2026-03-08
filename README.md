@@ -1,5 +1,4 @@
 # RE9SaveDecryptor
-_____________________________________________________________________________________________________________________________
 How to use:
 ```
 Description:
@@ -15,7 +14,6 @@ Options:
   -?, -h, --help  Show help and usage information
   --version       Show version information
 ```
-_____________________________________________________________________________________________________________________________
 Special Thank to:
 - kvasszn: [mhtame](https://github.com/kvasszn/mhtame).
 - mi5hmash: [MandarinJuice](https://github.com/mi5hmash/MandarinJuice).
