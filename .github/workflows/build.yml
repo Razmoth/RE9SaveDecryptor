@@ -11,19 +11,27 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Install .NET Core
+      
+    - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 10.0.x 
-    - name: Restore the application
-      run: nuget restore
+        dotnet-version: 10.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore RE9SaveDecryptor/RE9SaveDecryptor.csproj
+
     - name: Build the application
-      run: dotnet publish /t:RE9SaveDecryptor /p:Configuration=Release
+      run: dotnet build RE9SaveDecryptor/RE9SaveDecryptor.csproj -c Release --no-restore
+
+    - name: Publish the application
+      run: dotnet publish RE9SaveDecryptor/RE9SaveDecryptor.csproj -c Release -o publish
+
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: net10.0
-        path: RE9SaveDecryptor/bin/Release/net10.0/publish
+        path: publish/**
