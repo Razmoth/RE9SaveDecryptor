@@ -22,13 +22,13 @@ jobs:
         dotnet-version: 10.0.x
 
     - name: Restore dependencies
-      run: dotnet restore RE9SaveDecryptor/RE9SaveDecryptor.csproj
+      run: dotnet restore RE9SaveDecryptor.csproj
 
     - name: Build the application
-      run: dotnet build RE9SaveDecryptor/RE9SaveDecryptor.csproj -c Release --no-restore
+      run: dotnet build RE9SaveDecryptor.csproj -c Release --no-restore
 
     - name: Publish the application
-      run: dotnet publish RE9SaveDecryptor/RE9SaveDecryptor.csproj -c Release -o publish
+      run: dotnet publish RE9SaveDecryptor.csproj -c Release -o publish
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
