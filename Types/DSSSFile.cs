@@ -4,11 +4,11 @@ using System.Text;
 using HashifyNet;
 using HashifyNet.Algorithms.CityHash;
 using HashifyNet.Algorithms.MurmurHash;
-using RE9SaveDecryptor.Types;
+using RE9SaveDecryptor.Helpers;
 using System.Buffers;
 using System.Security.Cryptography;
 
-namespace RE9SaveDecryptor.Helpers;
+namespace RE9SaveDecryptor.Types;
 
 [Flags]
 public enum DSSSFlags

@@ -1,4 +1,4 @@
-﻿using RE9SaveDecryptor.Helpers;
+﻿using RE9SaveDecryptor.Types;
 using System.CommandLine;
 using System.Globalization;
 
